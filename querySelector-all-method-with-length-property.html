@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>query selector all method with length property</title>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet  debitis odio molestiae repellat.</h1>
+    <h1 class="hello World">consectetur adipisicing elit. Inventore cupiditate</h1>
+    <h2>Hello</h2>
+    <p class="hello">consequatur<span> quo obcaecati</span>
+                             <em>amet,</em> 
+                             <span>perspiciatis</span>
+    </p>
+    <p class="myclass">debitis odio
+        <span> molestiae </span>
+        repellat.
+    </p>
+    <div id="show">
+        <p>Lorem Ipsum is not simply random text</p>
+        <p class="hello"> Lorem <span class="myspan">Ipsum comes </span>from sections<em> 1.10.32 and 1.10.33</em></p> 
+    </div>
+    <p id="show1">There are many variations of passages of Lorem Ipsum available</p>
+    <div id="show2">Various versions have evolved over the years, sometimes by accident</div>
+    <script>
+    
+        var len =  document.querySelectorAll(".hello").length;
+        document.write(len);
+        console.log(len);
+    </script>
+</body>
+</html>

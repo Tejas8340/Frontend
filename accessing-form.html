@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accessing form</title>
+</head>
+<body>
+  <form action="" name="myform" id="myformid">
+    Username : <input type="text" name="m_username_field"> <br><br>
+    password: <input type="password" name="m_password_field"><br><br>
+    <input type="submit" name="m_sbtn" value="Submit"><br><br>
+  </form>
+<hr>
+<hr>
+  <form action="" name="yourform" id="yourformid">
+    Username : <input type="text" name="y_username_field"> <br><br>
+    password: <input type="password" name="y_password_field"><br><br>
+    <input type="submit" name="y_sbtn" value="Submit"><br><br>
+  </form>
+<script>
+       // with index number
+    //    var mform = document.forms[1];
+    //    console.log(mform);
+
+
+      // with name attribute using square brackedt
+    //   var form = document.forms['myform'];
+    //   console.log(form);
+
+
+   // with name attribute using dot
+//    var form = document.myform
+//    console.log(form);
+
+
+//with getElementById
+   var form = document.getElementById("myformid");
+   console.log(form);   
+</script>
+</body>
+</html>

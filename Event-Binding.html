@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <title>Event Binding</title>
+</head>
+
+<!-- with html 
+    <body>
+<h1>Hello World</h1>
+<button onclick="alert('Button Clicked');">Click Me</button>
+</body> -->
+
+<!---with javascript --->
+<body>
+    <h1>Hello World</h1>
+    <button id="mybtn">Click Me</button>
+
+<script>
+    // var btn = document.getElementById("mybtn");
+    // btn.onclick = function () { alert("Button Clicked");};
+
+    function disp(){
+        alert("Button CLicked");
+    }
+    document.getElementById("mybtn").onclick = disp;
+</script>
+</body> 
+</html>

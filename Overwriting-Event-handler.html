@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <title>Overwriting Event handler</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <button id="mybtn">Click Me</button>
+
+<script>
+    function disp1(){
+        alert("Button CLicked 1");
+    }
+    function disp2(){
+        alert("Button CLicked 2");
+    }
+    document.getElementById("mybtn").onclick = disp1;
+    document.getElementById("mybtn").onclick = disp2;
+</script>
+</body> 
+</html>

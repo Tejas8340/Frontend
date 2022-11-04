@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <title>replace node</title>
+</head>
+<body>
+   <ul id="myul">
+    <li>Item 1</li>
+    <li id="item_2">Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+   </ul>
+  <span id="myspan">span</span>
+     <script>
+    // // parentNode.replaceChild(newChild, oldChild)
+    //  var u = document.getElementById("myul");
+    //  var i = document.getElementById("item_2");
+    // // replace with new node
+    // // creating a new element
+    // var newChild = document.createElement("li");
+    // newChild.textContent = "Item N";
+    // var repalceNode = u.replaceChild(newChild, i);
+    // console.log(u);
+    // console.log(replaceNode);
+
+
+    var u = document.getElementById("myul");
+      var i = document.getElementById("item_2");
+    //  replace with existing Node
+    var pan = document.getElementById("myspan");
+    var replacedNode = u.replaceChild(pan, i);
+    console.log(replacedNode);
+    </script>
+</body> 
+</html>

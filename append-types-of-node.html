@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <title>Append type node</title>
+</head>
+<body>
+    <div id="myid">
+        <h1 id="myh1">We are learning JavaScript</h1>
+        <h1>We are learning DOM</h1>
+    </div>
+    <section id="mysec">
+
+    </section>
+    <script>
+        // Append Existing element  
+        //  var mysec = document.getElementById("mysec");
+        //  var myh1 = document.getElementById("myh1");
+        //  mysec.appendChild(myh1);
+        //  console.log(myid);
+        //  console.log(mysec);
+
+
+        // creating a new element node h2
+        // var nENode = document.createElement("h2");
+        // var targateNode = document.getElementById("myid");
+        // //Appending New h2 to Div
+        // targateNode.appendChild(nENode);
+        // console.log(targateNode);
+
+
+        // //Append text Node
+        // var targateNode = document.getElementById("myid");
+        // // creating new text node
+        // var nTNode = document.createTextNode("Text by JavaScript");
+        // // appending new text node to div
+        // targateNode.appendChild(nTNode);
+        // console.log(targateNode);
+
+
+        // // append text node
+        var targateNode = document.getElementById("myid");
+        // creating new text node
+        var nCNode = document.createComment("Comment from JS");
+        //append new comment node to div
+        targateNode.appendChild(nCNode);
+        console.log(targateNode);
+
+         
+
+    </script>
+</body>
+</html>

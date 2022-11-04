@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <title>HTML DOM Mapping</title>
+</head>
+<body>
+   <div>
+    <p>Hello Paragraph</p>
+   </div>
+   <h2 id="myh2" class="myclass" title="somedata">Hello World</h2>
+     <script>
+        // var h = document.getElementById("myh2");   
+        // console.log(h.attributes[0]);
+        // console.log(h.attributes['title']);
+
+
+        // setAttributes
+        // var p = document.getElementById("myh2");   
+        // p.setAttribute('class', myclassHelloWorld);
+        // console.log(p);
+
+        //getAttributes
+        // var p = document.getElementById("myh2"); 
+        // var getAt = p.getAttribute('id');
+        // console.log(getAt);
+
+        // removeAttributes
+        var p = document.getElementById("myh2");
+        p.removeAttribute('class');
+        console.log(p);
+
+    </script>
+</body> 
+</html>

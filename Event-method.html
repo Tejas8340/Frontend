@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event method</title>
+    <style>
+ #one {
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+}
+#two {
+    width: 300px;
+    height: 300px;
+    background-color: lightblue;
+}
+#three {
+    width: 200px;
+    height: 300px;
+    background-color: pink;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Hello World Good Morning</h1>
+    <div id="one"> 1 
+        <div id="two"> 2
+            <div id="three" > 3 
+                
+            </div>
+        </div>
+    </div>
+    <script>
+
+        // stop Propagation
+       
+        // function div1 (e) {
+        //     this.style.backgroundColor = 'red';
+        //     e.stopPropagation();
+        // }
+        // function div2 (e) {
+        //     this.style.backgroundColor = 'blue';
+        // }
+        // function div2_2 (e) {
+        //     this.style.width = '250px';
+        // }
+        // function div3 (e) {
+        //     this.style.backgroundColor = 'green';
+            
+        // }
+        // var divOne = document.getElementById("one");
+        // var divTwo = document.getElementById("two");
+        // var divThree = document.getElementById("three");
+        // divOne.addEventListener("click", div1, false);
+        // divTwo.addEventListener("click", div2, false);
+        // divTwo.addEventListener("click", div2_2, false);
+        // divThree.addEventListener("click", div3, false);
+
+        //stopImmediatePropagation
+        function div1 (e) {
+            this.style.backgroundColor = 'red';
+        }
+        function div2 (e) {
+            this.style.backgroundColor = 'blue';
+            e.stopImmediatePropagation();
+        }
+        function div2_2 (e) {   
+            this.style.width = '250px';
+        }
+        function div3 (e) {
+            this.style.backgroundColor = 'green';
+        }
+        var divOne = document.getElementById("one");
+        var divTwo = document.getElementById("two");
+        var divThree = document.getElementById("three");
+        divOne.addEventListener("click", div1, false);
+        divTwo.addEventListener("click", div2, false);
+        divTwo.addEventListener("click", div2_2, false);
+        divThree.addEventListener("click", div3, false);
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <title>class list property</title>
+    <style>
+        .myclass1{
+            background-color: blue;
+        }
+        .myclass2{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <p id="myp" class="myclass2 myclass3" style="color: yellowgreen;">Paragraph</p>
+    <script>
+        //    var p = document.getElementById("myp");
+        //   var elementClass = p.classList;
+        //   console.log(elementClass);
+
+
+        // var p = document.getElementById("myp");
+        // var elementClass = p.classList;
+        // console.log(elementClass[0]);
+
+
+        // var p = document.getElementById("myp");
+        // var elementClass = p.classList;
+        // console.log(elementClass.length);
+
+
+        // var p = document.getElementById("myp");
+        //   var elementClass = p.classList;
+        //   console.log(elementClass.value);
+
+
+        // var p = document.getElementById("myp");
+        //   var elementClass = p.classList;
+        //   console.log(elementClass.item(0));
+
+
+        // var p = document.getElementById("myp");
+        // var elementClass = p.classList;
+        // elementClass.add("myclass4");
+
+
+        // var p = document.getElementById("myp");
+        // var elementClass = p.classList;
+        // elementClass.remove("myclass3");
+        //   console.log(p);
+
+
+        // var p = document.getElementById("myp");
+        // var elementClass = p.classList;
+        // elementClass.replace("myclass2", "myclass1");
+        //   console.log(p);
+
+
+        // var p = document.getElementById("myp");
+        // var elementClass = p.classList;
+        // var c = elementClass.contains("myclass2");
+        //   console.log(c);
+
+
+        var p = document.getElementById("myp");
+        var elementClass = p.classList;
+        elementClass.toggle("myclass2");
+        elementClass.toggle("myclass2");
+    </script>
+</body> 
+</html>

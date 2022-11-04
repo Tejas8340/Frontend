@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>getElementsByTagName method with loop</title>
+</head>
+<body>
+    <h1 id="student">Lorem ipsum dolor sit amet  debitis odio molestiae repellat.</h1>
+    <h1>consectetur adipisicing elit. Inventore cupiditate</h1>
+    <h2>Hello</h2>
+    <p id="name">consequatur<span> quo obcaecati</span>
+                             <em>amet,</em> 
+                             <span>perspiciatis</span>
+    </p>
+    <p id="find">debitis odio
+        <span> molestiae </span>
+        repellat.
+    </p>
+    <div>
+        <p>Lorem Ipsum is not simply random text</p>
+        <p> Lorem Ipsum comes from sections 1.10.32 and 1.10.33</p>
+        
+    </div>
+    <script>
+        // var getSpan = document.getElementById("name");
+        var len = document.getElementsByTagName("p").length;
+        for(let i = 0; i < len; i++){
+            var result = document.getElementsByTagName("p")[i];
+        
+        document.write(result + "<br>");
+        console.log(result);
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map method</title>
+</head>
+<body>
+   <script>
+    //   var arr = [ 10, 20, 30, 40, 50];
+    //   var newArr = arr.map(function(value, i){
+    //     //    console.log(value);
+    //     // console.log(i);
+    //   })
+
+    //   var arr = [ 10, 20, 30, 40, 50];
+    //   var newArr = arr.map(function(value){
+    //     value ++
+    //     // console.log(value)
+    //     return value;
+    //   });
+    //   console.log(arr);
+    //   console.log(newArr);
+
+
+    var arr = [
+        {price: "100", product: "Mobile"},
+        {price: "200", product: "Laptop"},
+        {price: "300", product: "Mic"},
+        {price: "400", product: "PC"},
+    ];
+    // arr.map(function(value){
+    //     console.log(value.price);
+    // })
+
+    var newArr = arr.map(function(value) {
+        return value.price;
+    });
+    console.log(newArr);
+   </script>
+</body>
+</html>

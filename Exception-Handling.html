@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception Handling</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+   <script>
+        try{
+            add();
+            document.write("skipped code");
+        }
+        catch (e) {
+            document.write("Message: " + e.message + "<br>")
+            document.write("Name: " + e.name + "<br>")
+            document.write("Stack: " + e.stack + "<br>")
+        }
+        finally{
+            document.write("get executed wheather there is exception or not <br>");
+        }
+</script>
+</body>
+</html>

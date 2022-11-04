@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <title>Append Element node, text node, comment node</title>
+</head>
+<body>
+    <div id="myid">
+        <h1>We are learning JavaScript</h1>
+        <h1>We are learning DOM</h1>
+    </div>
+    <script>
+        // Creating New Element
+        var nENode = document.createElement("h2");
+
+        // Creating Text Node
+        var nTNode = document.createTextNode("Text by JS");
+
+        // Creating Comment Node
+        var nCNode = document.createComment("comment by JS");
+
+        //Append New Text Node to New Element Node (h2);
+        nENode.appendChild(nTNode);
+        console.log(nENode);
+        
+        var targetNode = document.getElementById("myid");
+
+        //append new Element Node to div
+         targetNode.appendChild(nENode);
+         console.log(targetNode);
+
+
+
+    </script>
+</body>
+</html>

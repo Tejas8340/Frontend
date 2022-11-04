@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <title>previousSibling and previousElementSibling</title>
+</head>
+<body>
+    <div>
+        <h3>JS Framework</h3>
+          <ul id="myul">
+             <li>Jquery</li>
+             <li id="myang">Angular JS</li>
+             <li>React js</li>
+             <li id="myd3">D3 JS</li>
+          </ul>
+     </div>
+   <script>
+            // parentNode.insertBefore(newNode, referenceNode)
+        //  When insert existing node
+        var parentNode = document.getElementById("myul");
+        var moveNode = document.getElementById("myd3");
+        var refNode = document.getElementById("myang");
+        parentNode.insertBefore(moveNode, refNode);
+        console.log(parentNode);
+   </script>
+</body>
+</html>
